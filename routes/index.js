@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 router.post('/submit',(req,res)=>{
-  console.log("Received req.body:", req.body);  // Debugging line
+ // console.log("Received req.body:", req.body); 
   userHelpers.DataLog(req.body).then((response)=>{
  console.log(response);
 res.redirect('/display');
